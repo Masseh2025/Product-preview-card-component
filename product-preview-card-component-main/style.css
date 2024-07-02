@@ -108,6 +108,8 @@ textarea:not([rows]) {
   justify-content: center;
   align-items: center;
   background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
 }
 
 /* card */
@@ -115,11 +117,12 @@ textarea:not([rows]) {
 .card {
   max-width: 600px;
   display: flex;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card__img {
-  max-width: 300px;
-  width: 100%;
+  width: 300px;
 }
 
 .card__content {
@@ -127,4 +130,62 @@ textarea:not([rows]) {
   width: 100%;
   padding: 1.5rem;
   background-color: var(--White);
+}
+
+.card__category {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+}
+
+.card__title {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Very-dark-blue);
+}
+
+/* card price */
+.card__price-container {
+  display: flex;
+  align-items: center;
+}
+
+.card__new-price {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: var(--Dark-cyan);
+}
+
+.card__orginal-price {
+  padding-left: 1rem;
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+}
+
+.card p,
+.card .btn {
+  font-size: 0.875rem;
+}
+
+/* button styling */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background-color: var(--Dark-cyan);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+}
+
+.btn__shopping-icon {
+  margin-right: 0.5rem;
 }
