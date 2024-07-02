@@ -191,10 +191,19 @@ textarea:not([rows]) {
   width: 100%;
   padding: 1em 1.5em;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .btn__shopping-icon {
   margin-right: 0.5rem;
+}
+
+/* Hover state for button */
+
+.btn:hover,
+.btn:focus {
+  transition: 0.3s;
+  background-color: var(--Very-dark-blue);
 }
 
 /* Media query */
